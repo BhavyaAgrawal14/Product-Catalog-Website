@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQs | Product Catalog</title>
+  <link rel="stylesheet" href="productcatalog.css" />
+  <style>
+    /* FAQ specific styles */
+    .faq-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .faq-container h2 {
+      margin-bottom: 30px;
+      border-left: 5px solid #0077b6;
+      padding-left: 10px;
+    }
+
+    details {
+      background: #fff;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      padding: 15px 18px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      cursor: pointer;
+    }
+
+    summary {
+      font-weight: 600;
+      color: #0077b6;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: "+";
+      float: right;
+      font-size: 1.2rem;
+      transition: transform 0.3s ease;
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin-top: 12px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 600;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>Frequently Asked Questions</h1>
+  </header>
+
+  <main class="faq-container" id="faq">
+
+    <h2>General Questions</h2>
+
+    <details>
+      <summary>What is this Product Catalog website?</summary>
+      <p>
+        This website is a frontend-based product catalog that displays products
+        across multiple categories such as Electronics, Clothing, and Home.
+      </p>
+    </details>
+
+    <details>
+      <summary>Can I purchase products from this website?</summary>
+      <p>
+        No. This is a demo project created for learning and showcasing frontend
+        development skills. It does not process real purchases.
+      </p>
+    </details>
+
+    <details>
+      <summary>How are products categorized?</summary>
+      <p>
+        Products are grouped into categories like Electronics, Clothing, and Home
+        for easier navigation and browsing.
+      </p>
+    </details>
+
+    <details>
+      <summary>Why are some products marked as out of stock?</summary>
+      <p>
+        The stock status is used to simulate a real e-commerce experience and
+        demonstrate UI states such as availability handling.
+      </p>
+    </details>
+
+    <details>
+      <summary>Is this website responsive?</summary>
+      <p>
+        Yes. The layout is built using modern CSS techniques to ensure it works
+        smoothly across desktops, tablets, and mobile devices.
+      </p>
+    </details>
+
+    <details>
+      <summary>Which technologies were used to build this project?</summary>
+      <p>
+        This project is built using HTML for structure, CSS for styling, and is
+        designed to be easily extendable using JavaScript.
+      </p>
+    </details>
+
+    <a href="Product_Catalog.html" class="back-link">← Back to Product Catalog</a>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Product Catalog. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
